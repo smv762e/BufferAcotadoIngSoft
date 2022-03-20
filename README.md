@@ -38,10 +38,10 @@ Then Lleno es {string} // Boolean no disponible, se hace una coversión Boolean 
 
 - Scenario Buffer parámetros
 Estructura:\
-Given BufferAcotado de capacidad <cap>\
-When Introducir elemento <a>\
-When Introducir elemento <b>\
+Given BufferAcotado de capacidad [cap]\
+When Introducir elemento [a]\
+When Introducir elemento [b]\
 ...\
 When Eliminar elemento
 ...\
-Then Elemento eliminado es <del>
+Then Elemento eliminado es [del]
