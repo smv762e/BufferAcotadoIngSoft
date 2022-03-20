@@ -3,11 +3,20 @@ Feature: Prueba Buffer
   Prueba de los diferentes métodos de la clase BufferAcotado
 
   Scenario: Añadir elementos
-  	Given Tengo un BufferAcotado de capacidad 2
+  	Given Tengo un BufferAcotado de capacidad 3
   	When Quiero introducir un elemento 1
   	When Quiero introducir un elemento 2
   	Then Quiero comprobar el tamaño 2
-  
+ 
+   Scenario: Eliminar elementos
+  	Given Tengo un BufferAcotado de capacidad 3
+  	When Quiero introducir un elemento 1
+  	When Quiero introducir un elemento 2
+  	When Quiero introducir un elemento 3
+  	When Quiero eliminar un elemento
+  	When Quiero eliminar un elemento
+  	Then Quiero comprobar el tamaño 1
+ 
   Scenario: Buffer vacio
   	Given Tengo un BufferAcotado de capacidad 2
   	When Quiero introducir un elemento 1
